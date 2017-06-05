@@ -48,12 +48,12 @@ decision_step() didn't need much modification. I did a trial and error with diff
 #### 1. Run the functions provided in the notebook on test images (first with the test data provided, next on data you have recorded). Add/modify functions to allow for color selection of obstacles and rock samples.
 
 
-![alt text][![coordinate transform](https://cloud.githubusercontent.com/assets/26546578/26780026/6c8107d2-4a05-11e7-84ec-afe8a4ae5d2f.PNG)]
+![coordinate transform](https://cloud.githubusercontent.com/assets/26546578/26780026/6c8107d2-4a05-11e7-84ec-afe8a4ae5d2f.PNG)
 
 #### 1. Populate the `process_image()` function with the appropriate analysis steps to map pixels identifying navigable terrain, obstacles and rock samples into a worldmap.  Run `process_image()` on your test data using the `moviepy` functions provided to create video output of your result. 
 
 
-![alt text][C:\Users\Habib Ali\Pictures\RoboND Screenshots\Project 1 Images\Video Output]![video output](https://cloud.githubusercontent.com/assets/26546578/26780054/8851d1c6-4a05-11e7-816a-e539aa5ae49b.PNG)
+![video output](https://cloud.githubusercontent.com/assets/26546578/26780054/8851d1c6-4a05-11e7-816a-e539aa5ae49b.PNG)
 
 #### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
 Initially the function rotate_pix(), translate_pix() were modified to include the formula of translation and rotation.
@@ -74,13 +74,12 @@ The rover was able to detect all sample rocks.
 Adding the pick up manuever would be an improvement.
 Experimenting more with the thresholding values would certainly improve the fidelity.
 
-**Note: running the simulator with different choices of resolution and graphics quality may produce different results, particularly on different machines!  Make a note of your simulator settings (resolution and graphics quality set on launch) and frames per second (FPS output to terminal by `drive_rover.py`) in your writeup when you submit the project so your reviewer can reproduce your results.**
-
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
 
 
-![alt text][
-![project1](https://cloud.githubusercontent.com/assets/26546578/26780077/b11d43a6-4a05-11e7-8243-d27efc15480b.png)]
+
+
+
+![project1](https://cloud.githubusercontent.com/assets/26546578/26780077/b11d43a6-4a05-11e7-8243-d27efc15480b.png)
 
 
