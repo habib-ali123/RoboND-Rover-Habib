@@ -80,6 +80,7 @@ Here I'll talk about the approach I took, what techniques I used, what worked an
 
 
 
-![alt text][C:\Users\Habib Ali\Pictures\RoboND Screenshots\Project 1 Images\Project1]
+![alt text][
+![project1](https://cloud.githubusercontent.com/assets/26546578/26780077/b11d43a6-4a05-11e7-8243-d27efc15480b.png)]
 
 
