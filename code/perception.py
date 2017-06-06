@@ -3,7 +3,7 @@ import cv2
 
 # Identify pixels above the threshold
 # Threshold of RGB > 160 does a nice job of identifying ground pixels only
-def color_thresh(img, rgb_thresh=(160, 160, 160)):
+def color_thresh(img, rgb_thresh=(180, 180, 180)):
     # Create an array of zeros same xy size as img, but single channel
     color_select = np.zeros_like(img[:,:,0])
     # Require that each pixel be above all three threshold values in RGB
@@ -112,7 +112,7 @@ def perception_step(Rover):
     # 3) Apply color threshold to identify navigable terrain/obstacles/rock samples
     
     threshed_terrain = color_thresh(warped)
-    threshed_obstacles = color_thresh(warped,(100,100,100))
+    threshed_obstacles = color_thresh(warped,(120,100,150))
     threshed_rocks = color_thresh(warped,(200,200,20))
     
     # 4) Update Rover.vision_image (this will be displayed on left side of screen)
@@ -121,7 +121,7 @@ def perception_step(Rover):
         #          Rover.vision_image[:,:,2] = navigable terrain color-thresholded binary image
         
     Rover.vision_image[:,:,2] = threshed_terrain*255
-    Rover.vision_image[:,:,0] = threshed_obstacles*255
+    Rover.vision_image[:,:,0] = threshed_obstacles*150
     Rover.vision_image[:,:,1] = threshed_rocks*255
    # print ('this is rover shape and max value ',Rover.vision_image.shape,' , ',np.max(Rover.vision_image))    
     
