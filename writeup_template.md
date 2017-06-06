@@ -66,6 +66,7 @@ Then map image pixel values were converted to rover-centric coords
 Then rover-centric pixel values were converted to world coordinates. The world_size was taken as 200. 
 Rover worldmap was updated. 
 Rover-centric cordinates were converted to polar cordinates inorder to give directions to navigate the rover.
+Changes were made to decision_step() to include a maneuver to get unstuck from rocks. This was made on the basis of time.
 
 #### 2. Launching in autonomous mode your rover can navigate and map autonomously.  Explain your results and how you might improve them in your writeup.  
 The rover was launched in autonomous mode. It did map a fair amount with good fidelity.
